@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Tamás Szegedi">
+  <meta name="description" content="triangels-in-many-rows">
+  <title>triangels-in-many-rows</title>
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link type="text/css" rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&vertPrata" rel="stylesheet">
+</head>
+<body>
+  <div id="flex-container">
+    <div id="wrapper-content">
+      <h1>Triangels, in pyramid layout</h1>
+      <p> This program is a simple example how to do a complicated composition with Javascript.</p>
+      <h2>Base settings</h2>
+      <p>The used "canvas" is 600 unit wide and 400 unit high.</p>
+      <p>The horizontal coordinate of the first triangel.</p>
+      <input id="triX" type="number" value="300">
+      <p>The vertical coordinate of the first triangel.</p>
+      <input id="triY" type="number" value="50">
+      <p>The side of the drawed triangels.</p>
+      <input id="triA" type="number" value="50">
+      <p>The number of rows of the drawed triangel.</p>
+      <input id="triRows" type="number" value="6">
+      <button id="btn" onclick="settings()">Try it >></button>
+    </div>
+    <div id="wrapper-canvas">
+      <canvas id="canvas" width="600" height="400" style="background-color: rgba(200, 200, 200, .7); border: 1px solid gray;"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
